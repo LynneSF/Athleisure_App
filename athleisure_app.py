@@ -15,7 +15,7 @@ def get_color_list():
        return my_cur.fetchall()
 
 #import colors
-my_color_list = my_cur
+my_color_list = get_color_list()
 
 #add a pick list
 colors_to_show = my_color_list.loc[fruits_selected]
